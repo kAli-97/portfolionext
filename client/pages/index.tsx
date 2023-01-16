@@ -2,13 +2,18 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import Header from "../components/Header";
+import Atemurtas from "../components/Atemurtas";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div>
-      <h3 className="text-cyan-500">tailwind eklendi</h3>
+    <div className="bg-[#343a40] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
+      <Header />
+      <section id="sec" className="snap-center">
+        <Atemurtas />
+      </section>
       <Head>
         <title>ALİ TEMURTAŞ</title>
       </Head>
