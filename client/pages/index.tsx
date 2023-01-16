@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <div>
+      <h3 className="text-cyan-500">tailwind eklendi</h3>
       <Head>
         <title>ALİ TEMURTAŞ</title>
       </Head>
