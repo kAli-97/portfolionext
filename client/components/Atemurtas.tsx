@@ -1,19 +1,43 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
 type Props = {};
 
 function Atemurtas({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["< Hi, I'm ALİ TEMURTAŞ />", "< Fullstack Developer />"],
+    words: ["< Hi, I'm ALİ TEMURTAŞ />", "< Full-Stack Developer />"],
     loop: true,
     delaySpeed: 2000,
   });
+
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-      <h1>
-        <span>{text}</span> <Cursor cursorColor="#F7AB0A" />
-      </h1>
+      <Image
+        className="relative rounded-full h-32 w-32 mx-auto object-cover"
+        src="/../public/xx.png"
+        alt="Picture of the author"
+        width={500}
+        height={500}
+      />
+      <div>
+        <h2>Information Systems Engineer</h2>
+        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+          <span className="mr-3">{text}</span> <Cursor cursorColor="#FFFFFF" />
+        </h1>
+        <Link href="#about">
+          <button className="btn">About</button>
+        </Link>
+        <Link href="#experience">
+          <button className="btn">Experience</button>
+        </Link>
+        <Link href="#skills">
+          <button className="btn">Skills</button>
+        </Link>
+        <Link href="#projects">
+          <button className="btn">Projects</button>
+        </Link>
+      </div>
     </div>
   );
 }
