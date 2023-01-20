@@ -6,7 +6,12 @@ type Props = {};
 
 function Atemurtas({}: Props) {
   const [text, count] = useTypewriter({
-    words: ["< Hi, I'm ALİ TEMURTAŞ />", "< Full-Stack Developer />"],
+    words: [
+      "< Hi, I'm ALİ TEMURTAŞ />",
+      "< Information Systems Engineer />",
+      "< Full-Stack Developer />",
+      "< Lifelong Learner />",
+    ],
     loop: true,
     delaySpeed: 2000,
   });
@@ -15,14 +20,13 @@ function Atemurtas({}: Props) {
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src="/../public/xx.png"
+        src="/xx.png"
         alt="Picture of the author"
         width={500}
         height={500}
       />
       <div>
-        <h2>Information Systems Engineer</h2>
-        <h1 className="text-5xl lg:text-6xl font-semibold px-10">
+        <h1 className="text-3xl lg:text-6xl font-semibold px-10">
           <span className="mr-3">{text}</span> <Cursor cursorColor="#FFFFFF" />
         </h1>
         <Link href="#about">

@@ -4,9 +4,9 @@ type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="h-screen">
-      {" "}
-      <h1 className="text-red-500">
+    <div className="h-screen text-center">
+      <h1 className="py-28">ABOUT</h1>
+      {/* <h1 className="text-red-500 mt-14">
         KOYU/AÇIK MOD OLACAK - YAZI AKIŞI OLACAK ŞUANKİ GİBİ - DOMAİN ALINACAK -
         BİLDİĞİM ŞEYLER GÖSTERİLECEK- İÇİNDE MİNİK UYGULAMALAR OLACAK TODO APP
         GİBİ - itools eklenecek link verilecek.-
@@ -63,7 +63,7 @@ function About({}: Props) {
       WPF application. I developed a web application called Shift Planner using
       React. Shift Planner is a web application which automatically assigns
       shifts to workers using its own algorithm which is developed by myself as
-      well.
+      well. */}
     </div>
   );
 }
