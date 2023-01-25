@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Cursor, Typewriter, useTypewriter } from "react-simple-typewriter";
-type Props = {};
 
-function Atemurtas({}: Props) {
+function Atemurtas({}) {
+  const [first, setfirst] = useState(null);
   const [text, count] = useTypewriter({
     words: [
       "< Hi, I'm ALİ TEMURTAŞ />",
@@ -15,7 +15,6 @@ function Atemurtas({}: Props) {
     loop: true,
     delaySpeed: 2000,
   });
-
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
       <Image
